@@ -7,7 +7,9 @@ body {
   background-color: $ash-gray;
 
   .content {
-    margin: 1em;
+    @media (min-width: 768px) {
+      margin: 1em;
+    }
     .navbar {
       background-color: $light-beige;
       padding: 1em;

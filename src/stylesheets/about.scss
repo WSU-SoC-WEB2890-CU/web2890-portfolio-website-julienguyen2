@@ -7,7 +7,9 @@ body {
   background-color: $ash-gray;
 
   .content {
-    margin: 1em;
+    @media (min-width: 768px) {
+      margin: 1em;
+    }
     .navbar {
       background-color: $charcoal;
       padding: 1em;
@@ -180,8 +182,8 @@ body {
             a {
               font-family: "Zilla Slab", serif;
               text-decoration: none;
-              color: white;
-              background-color: $light-green;
+              background-color: #dfeee3;
+              color: #000;
               padding: 0.5em 1.25em;
               border-radius: 50px;
               font-size: 0.8em; /* Mobile-first size */
@@ -195,8 +197,8 @@ body {
               }
 
               &:hover {
-                background-color: #dfeee3;
-                color: $black;
+                color: white;
+                background-color: #181c1e;
               }
             }
           }
